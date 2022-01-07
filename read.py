@@ -69,17 +69,6 @@ class SpeakingText():
         engine.runAndWait()
     
 
-text=SpeakingText(pytesseract.image_to_string(r'C:\Users\Usuario\Desktop\projetos paralelos\image_english\text2.png'),'Spanish',140)
-to_remove = [['(',str(number),')'] for number in range(0,10)]
-to_remove2 = [[str(number),' '] for number in range(0,10)]
-to_remove3 = ['{']
-
-
-text.set_symbols([*to_remove,*to_remove2,*to_remove3])
-text.removing_all_symbols()
-#text.set_symbols(to_remove2)
-#text.removing_all_symbols()
-#text.set_symbols(to_remove3)
-#text.removing_all_symbols()
-print(text.get_string())
-text.SpeakText(text.get_string())
+#text=SpeakingText(pytesseract.image_to_string(r'C:\Users\Usuario\Desktop\projetos paralelos\image_english\text3.png'),'English',140)
+#print(text.get_string())
+#text.SpeakText(text.get_string())
